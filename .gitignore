@@ -1,0 +1,7 @@
+*.class
+*.zip
+*.jpg
+*.png
+*.dat
+*~
+*.DS_Store
