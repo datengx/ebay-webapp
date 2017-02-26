@@ -1,0 +1,29 @@
+-- Load the data into MySQL database
+
+LOAD DATA LOCAL INFILE 'users.dat'
+	INTO TABLE User
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'items.dat'
+	INTO TABLE Item
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'sellersRate.dat'
+	INTO TABLE SellerRate
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'biddersRate.dat'
+	INTO TABLE BidderRate
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'categories.dat'
+	INTO TABLE Category
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'itemCategories.dat'
+	INTO TABLE ItemCategory
+	FIELDS TERMINATED BY '|*|';
+
+LOAD DATA LOCAL INFILE 'bids.dat'
+	INTO TABLE Bid
+	FIELDS TERMINATED BY '|*|';
